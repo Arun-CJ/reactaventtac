@@ -1,14 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Home from "./Components/Home/Home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import SampleClass from "./Components/SampleClass";
+import SampleText from "./Components/sampleText";
+import ConditionalRendering from "./Components/ConditionalRendering";
+import SampleForm from "./Components/sampleForm";
+import SampleArrays from "./Components/sampleArrays";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    {/* <SampleText /> */}
+    {/* <App /> */}
+    {/* <ConditionalRendering color="green" /> */}
+    {/* <Home color="red" display="false" /> */}
+    <SampleArrays />
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

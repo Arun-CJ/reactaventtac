@@ -1,0 +1,10 @@
+Using Bootstrap in React
+
+There are 3 Ways
+
+1) Using cdn
+    We have to import the cdn in public/index.html
+2)Install Bootstrap npm package
+    After installing Bootstrap we need to import main css in index.js
+    import "bootstrap/dist/css/bootstrap.min.css";
+3)Use bootstrap designed for react packages like react-bootstrap
