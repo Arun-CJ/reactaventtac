@@ -10,6 +10,7 @@ import SampleText from "./Components/sampleText";
 import ConditionalRendering from "./Components/ConditionalRendering";
 import SampleForm from "./Components/sampleForm";
 import SampleArrays from "./Components/sampleArrays";
+import SampleUseeffects from "./Components/SampleUseeffects";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,7 +20,7 @@ root.render(
     {/* <App /> */}
     {/* <ConditionalRendering color="green" /> */}
     {/* <Home color="red" display="false" /> */}
-    <SampleArrays />
+    <App />
   </>
 );
 
