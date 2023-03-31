@@ -7,7 +7,7 @@ const Home = ({ color, display }) => {
   return (
     <div>
       <p>This is Home page</p>
-      <p>The color is {color}</p>
+      {/* <p>The color is {color}</p>
       <p>Functional state value: {colors}</p>
       <button
         className="btn btn-warning"
@@ -27,7 +27,7 @@ const Home = ({ color, display }) => {
       ) : (
         <p>Button is disabled</p>
       )}
-      <p>Display {display}</p>
+      <p>Display {display}</p> */}
     </div>
   );
 };
