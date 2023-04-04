@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useState, createContext } from "react";
+import FirstChild from "./FirstChild";
+
+const NameContext = createContext();
 
 const Home = ({ color, display }) => {
   const [colors, setColors] = useState("Green");
   const [displayButton, setDisplayButton] = useState(true);
+  const [inputValue, setInputValue] = useState("");
 
   return (
     <div>
       <p>This is Home page</p>
+      <NameContext.Provider value={"Arun"}>
+        <FirstChild inputValue={inputValue} setInputValue={setInputValue} />
+      </NameContext.Provider>
       {/* <p>The color is {color}</p>
       <p>Functional state value: {colors}</p>
       <button
@@ -33,3 +40,4 @@ const Home = ({ color, display }) => {
 };
 
 export default Home;
+export { NameContext };
